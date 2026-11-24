@@ -1,6 +1,6 @@
 # Práctica 1 ML: Predicción multiclase de riesgo cardiovascular
 
-Práctica 1 de la asignatura de Machine Learning (Máster en Inteligencia Artificial, UMU, curso 2026/27).
+Práctica 1 de la asignatura de Machine Learning (Máster en Inteligencia Artificial, UMU, curso 2026/27). Todos los ficheros de esta práctica están en la carpeta `Entregable1/` del repositorio.
 
 El objetivo es clasificar a pacientes adultos en tres niveles de riesgo cardiovascular (**0: bajo**, **1: moderado**, **2: alto**) a partir de una cohorte clínica de 2.254 pacientes con 27 variables sociodemográficas, clínicas, analíticas y de estilo de vida.
 
@@ -10,7 +10,7 @@ El objetivo es clasificar a pacientes adultos en tres niveles de riesgo cardiova
 - Cesar Martín Castellanos (cesar.m@um.es)
 - Jose Francisco González (josefrancisco.gonzalem@um.es)
 
-## Estructura del repositorio
+## Estructura de la carpeta
 
 | Fichero | Descripción |
 |---|---|
@@ -20,7 +20,8 @@ El objetivo es clasificar a pacientes adultos en tres niveles de riesgo cardiova
 | `data/splits/` | Particiones de desarrollo y test generadas por el notebook |
 | `data/preprocessed/` | Resultado de cada configuración de preprocesado: desarrollo (`_dev.csv`, con los pacientes sintéticos de SMOTENC si los hay) y test (`_test.csv`, solo transformado) |
 | `models/` | `cv_search_results.joblib`: resultados de la búsqueda de hiperparámetros de las 45 combinaciones (métricas, puntuación por fold y mejor pipeline sin entrenar), que el notebook carga para no repetir el ajuste |
-| `ML-MemoriaEntregable1.tex` / `.docx` | Memoria técnica (plantilla IEEE) |
+| `ML-MemoriaEntregable1.pdf` / `.docx` | Memoria técnica (plantilla IEEE) |
+| `ML-DeclaraciónÉticaUso_IA.pdf` / `.docx` | Declaración ética del uso de IA |
 | `Practica_1_Machine_Learning_Cardiovascular.pdf` | Enunciado de la práctica |
 | `PR_CTICA_1-_Instrucciones.pdf` | Instrucciones de entrega |
 
@@ -29,7 +30,7 @@ El objetivo es clasificar a pacientes adultos en tres niveles de riesgo cardiova
 1. Clonar el repositorio:
    ```bash
    git clone https://github.com/alberct96/ML-Entregable1.git
-   cd ML-Entregable1
+   cd ML-Entregable1/Entregable1
    ```
 2. Crear y activar un entorno virtual (Python 3.12 o superior):
    ```bash
@@ -43,7 +44,7 @@ El objetivo es clasificar a pacientes adultos en tres niveles de riesgo cardiova
    ```bash
    pip install -r requirements.txt
    ```
-4. Abrir `ML-Entregable1.ipynb` con Jupyter o VS Code y ejecutar todas las celdas en orden.
+4. Abrir `ML-Entregable1.ipynb` con Jupyter o VS Code y ejecutar todas las celdas en orden. El notebook usa rutas relativas a su carpeta (`enfermedad_cardiovascular.csv`, `data/`, `models/`), así que el directorio de trabajo debe ser `Entregable1/` (es lo que hacen por defecto Jupyter y VS Code).
 
 Por defecto (`RUN_SEARCH = False`, apartado 3.4), el notebook carga los resultados de la búsqueda de hiperparámetros guardados en `models/cv_search_results.joblib` y no repite el ajuste de las 45 combinaciones. Para repetir la búsqueda completa, basta con poner `RUN_SEARCH = True`, aunque tarda bastante más.
 
