@@ -29,8 +29,8 @@ El objetivo es clasificar a pacientes adultos en tres niveles de riesgo cardiova
 
 1. Clonar el repositorio:
    ```bash
-   git clone https://github.com/alberct96/ML-Entregable1.git
-   cd ML-Entregable1/Entregable1
+   git clone https://github.com/alberct96/ML-Entregables.git
+   cd ML-Entregables/Entregable1
    ```
 2. Crear y activar un entorno virtual (Python 3.12 o superior):
    ```bash
