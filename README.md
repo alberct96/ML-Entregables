@@ -13,6 +13,6 @@ Prácticas entregables de la asignatura de Machine Learning (Máster en Intelige
 | Carpeta | Práctica |
 |---|---|
 | [`Entregable1/`](Entregable1/) | Práctica 1: predicción multiclase de riesgo cardiovascular |
-| [`Entregable2/`](Entregable2/) | Práctica 2: ... |
+| [`Entregable2/`](Entregable2/) | Práctica 2: predicción de la demanda eléctrica en España |
 
 Cada carpeta es independiente: tiene su propio `README.md` con la descripción de la práctica, su `requirements.txt` y las instrucciones para reproducirla. El notebook de cada práctica usa rutas relativas a su carpeta, así que debe ejecutarse desde ella.
